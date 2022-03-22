@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello devs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <style>
+        body,
+        h2,
+        h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        hr {
+            margin: 0;
+            padding: 0;
+        }
+
+        form>* {
+            margin-top: 16px;
+        }
+
+        form button {
+            margin-bottom: 16px;
+        }
+
+        .bgimg {
+            min-height: 100%;
+            background-image: url('/assets/banner.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-topleft w3-container w3-xxlarge w3-padding-top-24">
+            <button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">
+                cursos
+            </button>
+            <button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">
+                cadastro
+            </button>
+        </div>
+    </div>
+
+    <!-- Menu Modal -->
+    <div id="menu" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('menu').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h2>Arduino</h2>
+            </div>
+            <hr>
+            <div class="w3-container w3-black">
+                <h2>Flutter</h2>
+            </div>
+            <hr>
+            <div class="w3-container w3-black">
+                <h2>Java</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black">
+                <span onclick="document.getElementById('contact').style.display='none'"
+                    class="w3-button w3-display-topright w3-large">x</span>
+                <h2>Inscreva-se</h2>
+            </div>
+            <div class="w3-container">
+                <form action="/#" target="_blank">
+                    <input class="w3-input w3-border" type="text" placeholder="Nome" name="name" required />
+                    <input class="w3-input w3-border" type="email" placeholder="Email" name="email" required />
+
+                    <select class="w3-input w3-border w3-white" name="select" required>
+                        <option value="" disabled selected>Escolha curso de sua preferência</option>
+
+                        <option value="arduino">Arduino</option>
+                        <option value="flutter">Flutter</option>
+                    </select>
+
+                    <button class="w3-button w3-border w3-gray" type="submit">Quero garantir minha vaga!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+# Hello devs
+Projeto idealizado para demonstrar o funcionamento de uma API. O frontend deste código foi desenvolvido a partir de um template da [W3Schools](https://www.w3schools.com/w3css/w3css_templates.asp)
